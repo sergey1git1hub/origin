@@ -45,7 +45,7 @@ public class CallOnTwoLines {
     }
 
 
-    public static WebDriver callOnSecondLine() throws FindFailed, InterruptedException, UnknownHostException {
+    public static WebDriver callOnSecondLine() throws FindFailed, InterruptedException, IOException {
         Methods.call(driver, 2, "94948");
         Methods.cxAnswer();
         return driver;

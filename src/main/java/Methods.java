@@ -332,7 +332,7 @@ public class Methods {
         return driver;
     }
 
-    public static WebDriver call(WebDriver driver, int line, String number) throws FindFailed, InterruptedException, UnknownHostException {
+    public static WebDriver call(WebDriver driver, int line, String number) throws FindFailed, InterruptedException, IOException {
         System.out.println("call");
         String hostName = InetAddress.getLocalHost().getHostName();
         if (true/*hostName.equalsIgnoreCase("kv1-it-pc-jtest")*/) {
@@ -351,6 +351,7 @@ public class Methods {
             JavascriptExecutor executor = (JavascriptExecutor) driver;
             executor.executeScript("arguments[0].click();", button_Call);
             System.out.println("Button call clicked with javascript.");
+            openCXphone(5000);
         } else {
 
         }
