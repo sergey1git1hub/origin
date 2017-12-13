@@ -78,13 +78,13 @@ public class Methods {
             System.setProperty("webdriver.ie.driver", "C:/iedriver32/IEDriverServer.exe");
 
             DesiredCapabilities ieCapabilities = DesiredCapabilities.internetExplorer();
-            ieCapabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,
-                    true);
+           /* ieCapabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,
+                    true);*/
 
             /**********PLAY WITH CAPABILITIES*********************/
             ieCapabilities.setCapability("nativeEvents", false);
             ieCapabilities.setCapability("unexpectedAlertBehaviour", "accept");
-            ieCapabilities.setCapability("ignoreProtectedModeSettings", true);
+            //ieCapabilities.setCapability("ignoreProtectedModeSettings", true);
             ieCapabilities.setCapability("disable-popup-blocking", true);
             ieCapabilities.setCapability("enablePersistentHover", true);
             ieCapabilities.setCapability("ignoreZoomSetting", true);
