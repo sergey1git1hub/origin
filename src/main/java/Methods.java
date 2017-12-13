@@ -88,7 +88,7 @@ public class Methods {
             ieCapabilities.setCapability("disable-popup-blocking", true);
             ieCapabilities.setCapability("enablePersistentHover", true);
             ieCapabilities.setCapability("ignoreZoomSetting", true);
-            ieCapabilities.setCapability(InternetExplorerDriver.INITIAL_BROWSER_URL, "");
+            ieCapabilities.setCapability(InternetExplorerDriver.INITIAL_BROWSER_URL, webphoneUrl);
             /***************************************************/
             driver = new InternetExplorerDriver(ieCapabilities);
             driver.manage().window().maximize();
