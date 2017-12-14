@@ -148,6 +148,8 @@ public class Methods {
             WebDriverWait waitForTitle = new WebDriverWait(driver, 10);
             waitForTitle.until(ExpectedConditions.titleIs("gbwebphone"));
             Assert.assertEquals(driver.getTitle(), "gbwebphone");
+            WebDriverWait wait = new WebDriverWait(driver, 10);
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#lang_input_label")));
             WebElement language = driver.findElement(By.cssSelector("#lang_input_label"));
             language.click();
             WebElement language_en = driver.findElement(By.xpath("//li[text() = 'English']"));
