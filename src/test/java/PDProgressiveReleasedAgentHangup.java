@@ -21,7 +21,7 @@ public class PDProgressiveReleasedAgentHangup {
         data.group = "\\!test_group5_5220";
         driver = Methods.openWebphoneLoginPage(driver, data.browser, data.webphoneUrl);
         Methods.login(driver, data.method, data.username, data.group);
-        Methods.checkStatus(driver, "Available", 10);
+        Methods.checkStatus(driver, "Available", 60);
     }
 
     @Test(dependsOnMethods = "IELogin")
