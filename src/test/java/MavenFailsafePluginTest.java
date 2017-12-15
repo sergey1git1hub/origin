@@ -11,8 +11,8 @@ public class MavenFailsafePluginTest {
 
     @Test
     public static void test() throws InterruptedException, FindFailed, IOException {
-        //System.out.println("Maven failsafe plugin test.060496");
+        System.out.println("Maven failsafe plugin test.060496");
         Methods.openCXphone(1000);
-       // Assert.assertTrue(false);
+        Assert.assertTrue(false);
     }
 }
