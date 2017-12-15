@@ -1,3 +1,4 @@
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 /**
@@ -8,5 +9,6 @@ public class MavenFailsafePluginTest {
     @Test
     public static void test(){
         System.out.println("Maven failsafe plugin test.");
+        Assert.assertTrue(false);
     }
 }
