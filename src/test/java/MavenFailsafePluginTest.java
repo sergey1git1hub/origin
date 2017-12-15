@@ -1,5 +1,8 @@
+import org.sikuli.script.FindFailed;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import java.io.IOException;
 
 /**
  * Created by SChubuk on 15.12.2017.
@@ -7,8 +10,9 @@ import org.testng.annotations.Test;
 public class MavenFailsafePluginTest {
 
     @Test
-    public static void test(){
-        System.out.println("Maven failsafe plugin test.");
+    public static void test() throws InterruptedException, FindFailed, IOException {
+        System.out.println("Maven failsafe plugin test.060496");
+        Methods.openCXphone(1000);
         Assert.assertTrue(false);
     }
 }
