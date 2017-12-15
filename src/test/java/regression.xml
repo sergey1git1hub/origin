@@ -3,13 +3,13 @@
 
 <suite name="regression" verbose = "10">
 
-    <test name="MavenFailsafePlugin">
+ <!--   <test name="MavenFailsafePlugin">
         <classes>
             <class name = "MavenFailsafePluginTest"/>
 
         </classes>
-    </test>
-   <!-- <test name="TwoLinesAgentHangup">
+    </test>-->
+    <test name="TwoLinesAgentHangup">
         <classes>
             <class name = "Methods"/>
             <class name="TwoLinesAgentHangup"/>
@@ -56,5 +56,5 @@
                 </methods>
             </class>
         </classes>
-    </test>-->
+    </test>
 </suite>
