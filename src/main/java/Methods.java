@@ -384,6 +384,11 @@ public class Methods {
         org.sikuli.script.Pattern button_3CXAcceptCall = new org.sikuli.script.Pattern("C:\\SikuliImages\\button_3CXAcceptCall.png");
         screen.wait(button_3CXAcceptCall, 10);
         screen.click(button_3CXAcceptCall);
+        try{
+        screen.click(button_3CXAcceptCall);
+        } catch (Exception e){
+            e.printStackTrace();
+        }
         if (fast = false)
             Thread.sleep(1000);
         org.sikuli.script.Pattern closePhoneWindow = new org.sikuli.script.Pattern("C:\\SikuliImages\\closePhoneWindow.png");
